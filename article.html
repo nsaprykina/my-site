@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статьи</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="wrapper">
+		<header class="page-header header-article">
+			<div class="header-logo">
+                <a href="index.html">
+                    <img src="image/logo.svg" width="130px" height="82.51px" alt="logo">
+                </a>
+			</div>
+			<nav class="header-nav">
+				<ul class="nav-list">
+					<li><a href="index.html#article">Статьи</a></li>
+					<li><a href="index.html#my-info">Обо мне</a></li>
+					<li><a href="index.html#portfolio">Портфолио</a></li>
+					<li><a href="index.html#massege">Написать мне</a></li>
+				</ul>
+			</nav>
+        </header>
+        
+        <main>
+             <section class="motivation">
+                <h1>Как себя мотивировать</h1>
+                <span>Теги: путешествия, друзья</span>
+                <time datetime="2020-09-29">29.09.2020</time>
+                <p>Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам бороться с соблазнами» Ирины Якутенко.</p>
+                 
+                <p>Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью. Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно понять, какие стимулы использовать для эффективной мотивации.</p>
+
+                <figure>
+                    <img src="./image/layout.jpg" width="997" height="462" alt="layout">
+                    <figcaption>Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую позитивный стимул.</figcaption>
+                </figure>
+
+                <p>BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье поведение в основном определяется этой системой, направлена на получение вознаграждения. Они стремятся получить одобрение и награду за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию немедленного вознаграждения, что может мешать долгосрочной работе. BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.</p>
+
+                <p>Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения поставленной цели. Например, я решила выучить английский — само изучение не является целью, поэтому нужно правильно её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это можно использовать в различных сферах жизни.</p>
+                
+                <div class="social">
+                    <div class="social-like">
+                        <button class="like-button" type="button"><img src="./image/like.svg"><span class="like-number"></span></button>
+                        <ul class="social-link">
+                            <li><a class="social-tv" href="#"><img src="./image/twitter.svg"></a></li>
+                            <li><a class="social-fb" href="#"><img src="./image/facebook.svg"></a></li>
+                            <li><a class="social-vk" href="#"><img src="./image/vk.svg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="index.html#article">Ко всем статьям<img src="image/Arrow.svg"></a>
+            </section>
+
+            <section class="comment">
+                <div class="comment-chat">
+                    <div class="comment-text">
+                        <img class="comment-image" src="./image/people1.jpg" width="50" height="50" alt="Ivan Petrov">
+                        <b class="comment-user">Иван Петров</b>
+                        <p class="comment-message">Отличная статья! Спасибо.</p>
+                    </div>
+                    <div class="comment-text">
+                        <img class="comment-image" src="./image/people2.jpg" width="50" height="50" alt="Ksenia">
+                        <b class="comment-user">Ксения Ксения</b>
+                        <p class="comment-message">Отличный текст, добавила в закладки.</p>
+                    </div>
+                    <div class="comment-text">
+                        <img class="comment-image" src="./image/people3.jpg" width="50" height="50" alt="Ivan Ivanov">
+                        <b class="comment-user">Иван Иванов</b>
+                        <p class="comment-message">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
+                    </div>
+                </div>
+                <form class="comment-form" action="" method="POST">
+                    <fieldset>
+                        <legend>Оставить комментарий</legend>
+                        <div class="comment-item">
+                            <input class="comment-name" type="text" name="name" value="Имя" required><br>
+                            <input class="comment-email" type="email" name="email" value="Почта" required>
+                        </div>
+                        <div class="comment-item">
+                            <textarea class="comment-field">Написать комментарий...</textarea>
+                        </div>
+                        <input class="btn comment-btn" type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="page-footer">
+			<ul>
+				<li><a href="#">ВК</a></li>
+				<li><a href="#">Телеграм</a></li>
+				<li><a href="#">Инстаграм</a></li>
+				<li><a href="#">Твиттер</a></li>
+			</ul>
+		</footer>
+        
+    </div>
+<script src="./javascript/likes.js"></script>
+<script src="./javascript/comments.js"></script>
+</body>
+</html>
